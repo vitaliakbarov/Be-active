@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "632036823615",
+    "firebase_url": "https://be-active-fe971.firebaseio.com",
+    "project_id": "be-active-fe971",
+    "storage_bucket": "be-active-fe971.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632036823615:android:a3200ea23da87f93",
+        "android_client_info": {
+          "package_name": "com.vitaliakbarov.beactive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632036823615-n39l41l9l2npjf6l0gpmfncj9src4q3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vitaliakbarov.beactive",
+            "certificate_hash": "60d671eb00ded5b22b4bfc619c05774cd3e70693"
+          }
+        },
+        {
+          "client_id": "632036823615-4k9kvqghfprflmfgjnv08ffknvs9r9hi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBKLwlVNBvCAeBHoDKcEJ8hw-2_bbjVyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632036823615-4k9kvqghfprflmfgjnv08ffknvs9r9hi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

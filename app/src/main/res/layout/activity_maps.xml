@@ -1,0 +1,154 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MapsActivity"
+    android:weightSum="100"
+    android:layoutDirection="ltr"
+    android:background="#23242e"
+
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/fragment_Layout"
+        android:layout_weight="60"
+        android:orientation="horizontal">
+
+        <fragment
+
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.vitaliakbarov.beactive.Activities.MapsActivity"
+
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:id="@+id/time_and_distance_layout"
+        android:visibility="gone"
+        android:background="#000">
+
+
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/timer"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/timerTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0:0:00"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:textSize="20dp"
+            android:layout_weight="5"
+            android:textColor="#fff"
+
+            />
+
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/distance"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/distanceTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.0 km"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20dp"
+            android:layout_weight="5"
+            android:textColor="#fff"
+
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="20"
+        android:id="@+id/my_activity_buttons_layout"
+        >
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/walking"
+            android:id="@+id/buttonWalk"
+            android:layout_margin="25dp"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/running"
+            android:id="@+id/buttonRun"
+            android:layout_margin="25dp"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bicycle"
+            android:id="@+id/buttonBike"
+            android:layout_margin="25dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:text="Start"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="10"
+        android:id="@+id/startButton"
+        android:background="@drawable/button_style"
+        android:textAllCaps="false"/>
+
+
+
+    <TextView
+        android:id="@+id/see_activities"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:layout_weight="5"
+        android:text="See my Activities"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>
